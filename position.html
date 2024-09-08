@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position Practice</title>
+    </head>
+    <body style = "
+        height: 3000px;
+        padding-top: 60px;
+        padding-left: 80px">
+
+        <div style = "background-color: green;
+        color:white;
+        position:fixed;
+        left:0px;
+        bottom: 0px;
+        top: 50px;
+        width: 72px;
+        ">sidebar
+            <div style ="
+            position: absolute;
+            background-color: red;
+            color: wheat;
+            right: 0px; 
+            top: 0px;
+            ">X</div>
+        </div>
+        <!-- when an absolute position is inside a fixed one, 
+         it is positioned relative to that, like the timestamps of videos 
+         or the notification count on the icon-->
+
+        <div style ="
+        position: absolute;
+        background-color: red;
+        color: wheat;
+        right: 10px; 
+        top: 60px;
+        ">absolute</div>
+        <!-- absolute positions it on the page, so it
+         doenst move when you scroll down, but fixed makes it the 
+         same distance in your browser window, so it will stay 
+         there when you scroll relative -->
+
+         <!-- will appear OVER THE HEADER, since its written later in code 
+          to override this, we need to use z-index: <some value> 
+          where the higher values take more precedent, and default = 0
+          so if we set header z-index to 1 it will cover the red absolute 
+          when we scroll and it overlaps-->
+
+        <div style = "background-color: black;
+        color: white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 50px;
+        height: 50px;
+        ">header</div>
+
+        <div style="background-color: lightblue;
+        height:200px; 
+        width: 200px;
+        position:static; 
+        ">div 1</div>
+
+        <div style = "background-color: lightpink;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        ">div 2
+            <div style ="
+            position: absolute;
+            background-color: black;
+            color: wheat;
+            right: 10px; 
+            bottom: 10px;
+            ">5:00</div>
+        </div>
+        <!-- when position absolute is inside a position RELATIVE, 
+         it will be displayed on the element, not the page
+         and it will be displayed norml-->
+
+    </body>
+</html>

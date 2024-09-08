@@ -1,0 +1,75 @@
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px; /* to make space between each box */
+    margin-top: 10px; /*since there's 70px padding from top */
+    margin-bottom: 24px;
+    margin-right: 24px;
+    margin-left: 18px;
+}
+
+.video-preview {
+    display: inline-block;
+    vertical-align: top; 
+    /*don't really need these now because of grid display */
+}
+
+.thumbnail-row { /* the div containing the thumbnail, tbh could've done this to the thumbnail directly */
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%; /*will adjust height to maintain shape */
+    display: block; /*not really needed, since its the only element in the top vertical div */
+    border-radius: 10px;
+}
+
+.video-time {
+    background-color: rgba(10,10,10,0.5);
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.video-info-grid {
+    display: grid; 
+    grid-template-columns: 50px 1fr;
+}
+
+.channel-picture { /*the horizontal div */
+    vertical-align: top;
+}
+
+.profile-picture { 
+    width: 80%; /* will take up entire space of its container, the channel-picture div */
+    /* which will be good for when we want to scale and resize */
+    border-radius: 25px;
+}
+
+.video-title {
+    margin-top: 0px; /* don't really need this, since all paragraphs have 0px margin now */
+    font-size: 16px;
+    font-weight: 500; /*don't use px for this, just the number */
+    line-height: 22px;
+    margin-bottom: 2px;
+}
+
+.video-author, .video-stats {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.video-author {
+    margin-bottom: -1.4px;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube (saanvi's version)</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href = "styles/general.css">
+        <link rel="stylesheet" href = "styles/header.css">
+        <link rel="stylesheet" href = "styles/video.css">
+        <link rel="stylesheet" href = "styles/sidebar.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <img class='hamburger-menu' src="icons/hamburger-menu.webp">
+                <img class='youtube-logo' src="icons/youtube_logo.png">
+            </div>
+
+            <div class="middle-section">
+                <input class = "search-bar" type = "text" placeholder="Search"> <!-- can also do check for a checkbox -->
+                <button class="search-button">
+                    <img class = "search-icon" src="icons/glass.svg">
+                </button>
+                <button class="voice-search-button">
+                        <img class="voice-search-icon" src ="icons/voice.svg">
+                </button>
+            </div>
+
+            <div class="right-section">
+                <img class = "upload-icon" src = "icons/upload-video.svg">
+                <div class = 'notifications-icon-container'> <!-- so that we can relative absolute position-->
+                    <img class = "notifications-icon" src = "icons/bell.svg">
+                    <div class = 'notifications-count'>3</div>
+                </div>
+                <img class = "current-user-picture" src = "profile-pics/my_profile_pic.jpg">
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-link">
+            </div>
+            <div class="sidebar-link">
+            </div>
+            <div class="sidebar-link">
+            </div>
+            <div class="sidebar-link">
+            </div>
+        </div>
+
+        
+        <div class ="video-grid">
+
+            <div class = "video-preview" id = "video1"> 
+                <div class = 'thumbnail-row'> <!--vertical layout div, between thumbnail and info-->  
+                    <img class="thumbnail" src ="thumbnails/tn1.webp"> <!-- are both void elements -->
+                    <div class="video-time">14:20</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture"> <!--the two horixontal divs, between profile pic and text-->
+                        <img class = 'profile-picture' src ="profile-pics/pfp1.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the first image -->
+                        <p class = 'video-title'> fall 2024 trends I like and don't like </p>
+                        <p class = 'video-author'> Alexa Sunshine83 </p>
+                        <p class = 'video-stats'> 45K views &#183; 1 month ago</p> 
+                    </div>  
+                </div>
+            </div>
+    
+            <div class = "video-preview" id = "video2"> 
+                <div class = 'thumbnail-row'> <!--vertical layout div, between thumbnail and info-->  
+                    <img class="thumbnail" src = "thumbnails/tn2.webp"> <!-- are both void elements -->
+                    <div class="video-time">34:11</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture"> <!--the two horixontal divs, between profile pic and text-->
+                        <img class = 'profile-picture' src ="profile-pics/pfp2.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the second image -->
+                        <p class = 'video-title'> How Jane Birkin Became the "It-Girl" of 60's Paris | It-Girls Uncovered</p>
+                        <p class = 'video-author'> Final Girl Studios </p>
+                        <p class = 'video-stats'> 535K views &#183; 1 year ago</p> 
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "video-preview" id = "video3"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn3.webp"> 
+                    <div class="video-time">9:56</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture"> 
+                        <img class = 'profile-picture' src ="profile-pics/pfp3.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the third image -->
+                        <p class = 'video-title'> EVERYDAY MAKEUP ROUTINE</p>
+                        <p class = 'video-author'> Rae </p>
+                        <p class = 'video-stats'> 79K views &#183; 2 months ago</p> 
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "video-preview" id = "video4"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn4.webp">
+                    <div class="video-time">22:07</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp4.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the fourth image -->
+                        <p class = 'video-title'> macro trends that are here to stay</p>
+                        <p class = 'video-author'> Laini Ozark </p>
+                        <p class = 'video-stats'> 40K views &#183; 3 days ago</p> 
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "video-preview" id = "video5"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn5.webp">
+                    <div class="video-time">31:26</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp5.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the fifth image -->
+                        <p class = 'video-title'> a day in my life living in copenhagen</p>
+                        <p class = 'video-author'> Eva Meloche </p>
+                        <p class = 'video-stats'> 96K views &#183; 13 days ago</p> 
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "video-preview" id = "video6"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn6.webp">
+                    <div class="video-time">16:32</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp6.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the sixth image -->
+                        <p class = 'video-title'> preparing for autumn 🍂 (book shopping, cozy cafe, gilmore girls, & making soup) </p>
+                        <p class = 'video-author'> romney ellen </p>
+                        <p class = 'video-stats'> 39K views &#183; 11 days ago</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "video-preview" id = "video7"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn7.webp">
+                    <div class="video-time">46:01</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp7.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the seventh image -->
+                        <p class = 'video-title'> underconsumption-core, travel outfits, and Paul Mescal&#39;s shorts </p>
+                        <p class = 'video-author'> Mina Le </p>
+                        <p class = 'video-stats'> 352K views &#183; 7 days ago</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "video-preview" id = "video8"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn8.webp">
+                    <div class="video-time">19:25</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp8.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the eighth image -->
+                        <p class = 'video-title'> I digitally catalogued my ENTIRE wardrobe to maximise my closet </p>
+                        <p class = 'video-author'> Nicole Basri </p>
+                        <p class = 'video-stats'> 51K views &#183; 1 month ago</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "video-preview" id = "video9"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn9.webp">
+                    <div class="video-time">7:41</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp9.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the ninth image -->
+                        <p class = 'video-title'> Guest Mix: Salsa Records from Venezuela with Gia Fu </p>
+                        <p class = 'video-author'>  MAJ </p>
+                        <p class = 'video-stats'> 1.4M views &#183; 2 years ago</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "video-preview" id = "video10"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn10.webp">
+                    <div class="video-time">18:33</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp10.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the tenth image -->
+                        <p class = 'video-title'> summer favorites (clothing, books, film, music, etc.) </p>
+                        <p class = 'video-author'> romney ellen </p>
+                        <p class = 'video-stats'> 10K views &#183; 2 weeks ago</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "video-preview" id = "video11"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn11.webp">
+                    <div class="video-time">15.40</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp11.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the eleventh image -->
+                        <p class = 'video-title'> styling 2023 fall trends! what I wore this week! </p>
+                        <p class = 'video-author'>  Caroline Tucker </p>
+                        <p class = 'video-stats'> 47K views &#183; 10 months ago</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = "video-preview" id = "video12"> 
+                <div class = 'thumbnail-row'> 
+                    <img class="thumbnail" src = "thumbnails/tn12.webp">
+                    <div class="video-time">28:21</div>
+                </div>
+                <div class = "video-info-grid"> 
+                    <div class = "channel-picture">
+                        <img class = 'profile-picture' src ="profile-pics/pfp12.jpg">
+                    </div> 
+                    <div class = "video-info">
+                        <!-- text for the twevlth image -->
+                        <p class = 'video-title'> read deely & engage more with your books </p>
+                        <p class = 'video-author'>  hunter is kinda cool </p>
+                        <p class = 'video-stats'> 120K views &#183; 4 months ago</p> 
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    </body>
+</html>
+
+
+<!-- paragaph by default is a block element, takes up the whole line (same with div)-->
+<!-- image and input elements are inline block elemnts, and only take up as much space -->
+<!-- finally inline element, which appears within a line of text, like bold-->

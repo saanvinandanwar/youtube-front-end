@@ -1,0 +1,73 @@
+/*css for text.html, the youtube sample text one */
+
+p { 
+    font-family: Roboto; /* will apply to all paragraphs */
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+.video-title {
+    font-weight: bold;
+    font-size: 18px;
+    width: 280px;
+    line-height: 24px; /*spacing between lines */
+    margin-bottom: 5px; /* this will still override the <p> since its more specific */
+        /*  selector is more specific than the p one, so it's used, targets smaller group of elements */
+}
+
+.video-stats {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    /* margin-top: 0px; don't need these since we have it in the <p> tag */
+    margin-bottom: 20px;
+}
+
+.video-author {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    /* margin-top: 0px; don't need these since we have it in the <p> tag */
+    margin-bottom: 20px;
+}
+
+.video-description {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    width: 280px; /*since we want it to wrap around */
+    line-height: 22px;
+    margin-bottom: 100px;
+    /* margin-top: 0px; don't need these since we have it in the <p> tag */
+}
+
+.apple-text {
+    font-size: 14px;
+    background-color: rgb(227, 65, 64);
+    color: white;
+    text-align: center; /*centers the text */
+    padding-top:18px; 
+    padding-bottom: 18px;
+    /* text-decoration: underline;    this will underline everything */
+
+    /* can do <span class = ""></span> in a paragraph and put text in between
+    this is a genetic text feature, so using the class we can style with css 
+    however we want to
+    also have basic ones like <strong>text</strong> to bold and <u> text </u> to underline */
+}
+
+.shop-link {
+    cursor: pointer; /* mouse turns into pointer over text */
+    margin-left: 6px; /*adds spacing between teh words */
+}
+
+.shop-link:hover {
+    text-decoration: underline;
+}
+
+.tbnail {
+    width: 300px; /*will adjust height to maintain shape */
+    height: 300px;
+    object-fit: contain; /* tells it to be fully contained in the area and not stretch it */
+    /* if we did object-fit: cover; it would not stretch and fill the area (if its bigger */
+    object-position: bottom;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+}

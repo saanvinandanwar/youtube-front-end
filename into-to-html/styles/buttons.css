@@ -1,0 +1,78 @@
+ /*for css code*/
+            .subscribe-button { 
+                background-color: rgb(200, 0, 0);
+                color: white;
+                border: none;
+                /* height: 36px;   don't wanna do this since text can overflow
+                width: 105px; */ 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 16px; 
+                padding-right: 16px; /* padding is better alternative for height/width */
+                border-radius: 2px; /* to make rounded corners */
+                cursor: pointer; /* to get a hand over the button */
+                margin-right: 8px; /*to add space between the bottons*/
+                margin-left: 8px;
+                transition: opacity 0.15s; /* transitions to clearly opacity and how long */
+                vertical-align: top; /* aligns to top instead of by text */
+            }
+            
+            .subscribe-button:hover { /*styles that apply only when we hover */
+                opacity: 0.8; /* how faded the element is */
+            }
+            
+            .subscribe-button:active { /*styles apply when we click on the button */
+                opacity: 0.5;
+            }
+            
+            .join-button {
+                background-color: white;
+                border-color: rgb(6, 95, 212);
+                border-style: solid; /*so there's no color gradient */
+                border-width: 1px;
+                color: rgb(6, 95, 212);
+                border-radius: 2px;
+                cursor: pointer;
+                padding-top: 9px;  /*adds space on the inside of the button */
+                padding-bottom: 9px; /* need to make 1px smaller than subscribe due to border */
+                padding-left: 16px; 
+                padding-right: 16px;
+            
+                transition: background-color 0.15s, color 0.15s; 
+                /*make sure to put hover in the botton and not the hover feature 
+                otherwise it won't work when you're hovering off the button, will only work one way */
+            }
+            
+            .join-button:hover { /*want to invert normal colors of botton */
+                background-color: rgb(6, 95, 212);
+                color: white;
+            }
+            
+            .join-button:active {
+                opacity: 0.7; 
+            }
+            
+            .tweet-button {
+                background-color: rgb(2, 158, 255);
+                color: white;
+                border: none;
+                /*height: 36px;
+                width: 74px; */ /* using padding instead */
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 16px; 
+                padding-right: 16px;
+                border-radius: 18px; /*have to set to have of height or width, whichever is lower --> makes it round */
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                margin-left: 8px;
+                transition: box-shadow 0.15s;
+                vertical-align: top;
+            }
+            
+            .tweet-button:hover {
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15); /* to create a shadow */
+                /* horizontal position, vertical position, blur, and color */
+            }
+            

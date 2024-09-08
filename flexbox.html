@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="
+            display:flex;
+            flex-direction: row;
+            ">
+            <div style="background-color: 
+            lightblue;">div 1 text</div>
+            <!-- divs inside a flexbox (these two), now behave like inline block elements-->
+            <!-- is flexible to make it as long or tall as we need to, maintains alignement-->
+            <div style="background-color:
+            lightpink;">div 2 <p>text</p></div>
+        </div>
+
+
+
+        <div style="
+            margin-top: 30px;
+            display:flex;
+            flex-direction: row;
+            ">
+
+            <div style="
+            background-color: lightblue;
+            width:100px;
+            ">100px</div>
+            
+            <div style="
+            background-color: lightpink;
+            flex: 1;
+            "> flex:1</div> <!-- flex: 1 makes it take up the remaining amount of space -->
+        </div>
+
+
+
+        <div style="
+            margin-top: 30px;
+            height: 70px; 
+            border: 1px;
+            border-style: solid;
+            border-color: grey;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            ">
+            
+            <div style="
+            background-color: lightpink;
+            width: 100px;
+            "> flex:1</div> <!-- flex: 1 makes it take up the remaining amount of space -->
+
+            <div style="
+            background-color: lightblue;
+            width: 100px;
+            "> flex:1</div>
+        
+            <div style="
+            background-color: lightpink;
+            width: 100px;
+            "> flex:1</div> <!-- same as fr in grid -->
+            <!-- different from grid because ELEMENTS take their layout with them, flexible layout -->
+            
+        </div>
+
+
+
+        <div style="
+            margin-top: 30px;
+            height: 70px; 
+            border: 1px;
+            border-style: solid;
+            border-color: grey;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            "> <!-- spreads elements evenly -->
+            
+            <div style="
+            background-color: lightpink;
+            width: 100px;
+            "> flex:1</div> <!-- flex: 1 makes it take up the remaining amount of space -->
+
+            <div style="
+            background-color: lightblue;
+            width: 100px;
+            "> flex:1</div>
+        
+            <div style="
+            background-color: lightpink;
+            width: 100px;
+            "> flex:1</div> <!-- same as fr in grid -->
+            <!-- different from grid because ELEMENTS take their layout with them, flexible layout -->
+            
+        </div>
+
+
+        <div style="
+            margin-top: 30px;
+            height: 70px; 
+            border: 1px;
+            border-style: solid;
+            border-color: grey;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: full;
+            "> <!-- spreads elements evenly -->
+            
+            <div style="
+            background-color: lightpink;
+            width: 100px;
+            "> flex:1</div> <!-- flex: 1 makes it take up the remaining amount of space -->
+
+            <div style="
+            background-color: lightblue;
+            width: 100px;
+            "> flex:1</div>
+        
+            <div style="
+            background-color: lightpink;
+            width: 100px;
+            "> flex:1</div> <!-- same as fr in grid -->
+            <!-- different from grid because ELEMENTS take their layout with them, flexible layout -->
+            
+        </div>
+
+
+
+
+
+    </body>
+</html>
+
+<!--Similar to grid but more flexible -->
