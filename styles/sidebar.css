@@ -5,12 +5,30 @@
     top: 55px;
     background-color: white;
     width: 72px;
+    padding-top: 5px;
 }
 
 .sidebar-link {
-    height: 76px;
+    height: 74px;
+    display: flex;
+    justify-content: center; /* for vertical centering of icons NOW THAT FLEX DIRECTION IS COLUM */
+    align-items: center; /* for horizonal centering NOW THAT FLEX DIRECTION IS COLUMN */
+    /* changing the flex direction switches the function of justify-content and align-items */
+    flex-direction: column; /*displays elements vertically, 
+    so the icon and word are above and below each other */
+    cursor: pointer;
+}
+
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
 }
 
 .sidebar-link:hover {
-    background-color: lightgray;
+    background-color: rgb(235,235,235);
 }
